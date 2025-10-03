@@ -1,5 +1,5 @@
 from secrets import randbits
-import numpy as np              # basic numerical package
+import numpy as np       
 
 class bell_ineq_base(object):
     """ Calculate Bell inequalities from randomly generated hidden variables """
@@ -83,4 +83,5 @@ class bell_ineq(bell_ineq_base):
 
 if __name__ == '__main__':
     bell_test = bell_ineq()
+
     print(bell_test.calculate_PXY(bell_test.generate_hidden_variables(10), "+A", "+A"))
